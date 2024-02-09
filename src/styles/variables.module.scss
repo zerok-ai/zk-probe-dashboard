@@ -1,0 +1,190 @@
+// COLORS
+
+// Primary color - light to dark
+$primary-100: #c3f5e8;
+$primary-200: #5bdcc6;
+$primary-300: #30c6bb;
+$primary-400: #04b0b0;
+$primary-500: #038c8c;
+$primary-600: #027070;
+$primary-700: #025c62;
+$primary-800: #024954;
+
+// grey colors - light to dark
+$grey-25: #f5f5f5;
+$grey-50: #eee;
+$grey-100: #e9e9e9;
+$grey-200: #ddd;
+$grey-300: #ccc;
+$grey-400: #999;
+$grey-500: #49637a;
+$grey-600: #3b5166;
+$grey-700: #283747;
+$grey-800: #1f2b38;
+$grey-900: #171f29;
+$grey-925: #121522;
+$grey-950: #0c0b1b;
+
+// backgrounds
+$bg-dark: #0c0b1b;
+
+// status colors
+
+// ERROR
+$error-900: #e01a00;
+$error-700: #ff5d47;
+// default error color
+$error-500: #ff7765;
+$error-300: #ffa599;
+$error-100: #ffc9c2;
+
+// SUCCESS
+$success-900: #1e9966;
+$success-700: #25bb7d;
+// default success
+$success-500: #39d896;
+$success-300: #88e7c0;
+$success-100: #aaeed2;
+
+// WARNING
+$warning-900: #b67702;
+$warning-700: #de9102;
+// default warning
+$warning-500: #fdb022;
+$warning-300: #fdc55d;
+$warning-100: #fedb9a;
+
+$error: $error-500;
+$success: $success-500;
+$warning: $warning-500;
+
+// status borders
+$error-border: $error-500;
+$success-border: $success-500;
+$warning-border: $warning-500;
+$primary-border: $primary-400;
+
+// common
+$white: #fff;
+$black: #000;
+
+// SPACING
+$sp-base: 4px;
+$sp-4: 4px;
+$sp-8: 8px;
+$sp-12: 12px;
+$sp-16: 16px;
+$sp-20: 20px;
+$sp-24: 24px;
+$sp-28: 28px;
+$sp-32: 32px;
+$sp-36: 36px;
+$sp-40: 40px;
+
+// component specific widths and heights
+$input-height: 40px;
+$default-line-height: 24px;
+$line-height-small: 16px;
+$button-height-default: 40px;
+$header-height: 60px;
+$incident-drawer-width: 320px;
+$node-width: 220px;
+$node-height: 42px;
+
+// BORDER RADIUS
+$br-xs: 2px;
+$br-sm: 4px;
+$br-md: 6px;
+$br-lg: 8px;
+$br-xl: 12px;
+
+// FONT SIZES
+$font-xs: 10px;
+$font-sm: 12px;
+$font-md: 14px;
+$font-lg: 16px;
+$font-xl: 18px;
+
+// BREAKPOINTS
+$bp-laptop: 1376px;
+$bp-desktop: 1440px;
+$bp-xl: 1920px;
+
+// form variables
+$max-form-width: 500px;
+
+// component widths
+$main-drawer-width-full: 260px;
+$main-drawer-width-mini: 60px;
+$modal-width-mini: 450px;
+$header-width: 60px;
+
+// page-heights
+$full-page-height: calc(100vh - $header-height - $sp-base * 40);
+$full-table-height: calc(100vh - $header-height - $sp-base * 56);
+
+:export {
+  primary100: $primary-100;
+  primary200: $primary-200;
+  primary300: $primary-300;
+  primary400: $primary-400;
+  primary500: $primary-500;
+  primary600: $primary-600;
+  primary700: $primary-700;
+  primary800: $primary-800;
+  // greys
+  grey25: $grey-25;
+  grey50: $grey-50;
+  grey100: $grey-100;
+  grey200: $grey-200;
+  grey300: $grey-300;
+  grey400: $grey-400;
+  grey500: $grey-500;
+  grey600: $grey-600;
+  grey700: $grey-700;
+  grey800: $grey-800;
+  grey900: $grey-900;
+  grey925: $grey-925;
+  grey950: $grey-950;
+  // status
+  errorColor: $error;
+  successColor: $success;
+  warningColor: $warning;
+  // error hues
+  error100: $error-100;
+  error300: $error-300;
+  error500: $error-500;
+  error700: $error-700;
+  error900: $error-900;
+  // warning hues
+  warning100: $warning-100;
+  warning300: $warning-300;
+  warning500: $warning-500;
+  warning700: $warning-700;
+  warning900: $warning-900;
+  // success hues
+  success100: $success-100;
+  success300: $success-300;
+  success500: $success-500;
+  success700: $success-700;
+  success900: $success-900;
+  // common
+  white: $white;
+  black: $black;
+  // backgrounds
+  backgroundDark: $bg-dark;
+  // component heights
+  inputHeight: $input-height;
+  defaultLineHeight: $default-line-height;
+  buttonHeightDefault: $button-height-default;
+  mainDrawerWidthFull: $main-drawer-width-full;
+  mainDrawerWidthMini: $main-drawer-width-mini;
+  incidentDrawerWidth: $incident-drawer-width;
+  nodeWidth: $node-width;
+  // spacing
+  spXS: $sp-base;
+  // font sizes
+  fontXS: $font-xs;
+  fontLG: $font-lg;
+  fontXL: $font-xl;
+}

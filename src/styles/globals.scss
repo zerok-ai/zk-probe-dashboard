@@ -1,0 +1,215 @@
+@import "./variables.module.scss";
+body,
+html {
+  font-family: "Noto Sans", sans-serif;
+  background-color: $bg-dark;
+  box-sizing: border-box;
+}
+
+p,
+div,
+a,
+span,
+button,
+select,
+input {
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: $grey-100;
+}
+
+button {
+  text-transform: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: $grey-300;
+  margin: $sp-12 0;
+}
+
+h3,
+h5 {
+  font-weight: 500;
+}
+
+p {
+  line-height: $default-line-height;
+}
+
+hr {
+  border-color: $grey-900 !important;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 54px;
+  @media screen and (max-width: ($bp-desktop)) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 44px;
+  @media screen and (max-width: ($bp-desktop)) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 38px;
+  @media screen and (max-width: ($bp-desktop)) {
+    font-size: 26px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 32px;
+  @media screen and (max-width: ($bp-desktop)) {
+    font-size: 22px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+h6 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media only screen and (min-width: ($bp-desktop + 1)) {
+  p,
+  div {
+    font-size: $font-lg;
+  }
+}
+// custom styles for HTML elements
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.1s ease;
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    color: $primary-500;
+  }
+}
+
+fieldset {
+  outline: 0;
+  border: none;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+// Material ui overrides
+.MuiFormHelperText-root {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.Mui-disabled {
+  color: grey-400;
+}
+
+.MuiSelect-select {
+  color: $white;
+}
+
+.MuiDivider-root {
+  border-color: $grey-800;
+}
+
+.MuiTabs-indicator {
+  display: none;
+  height: 0;
+}
+
+// JSON viwer
+.object-key-val,
+.variable-row {
+  border-color: $grey-300 !important;
+}
+
+.object-key {
+  span {
+    color: $grey-400 !important;
+  }
+}
+
+.variable-value {
+  span {
+    color: $grey-50 !important;
+  }
+}
+
+.react-json-view {
+  background-color: $grey-900 !important;
+}
+
+// MUI overloads
+
+// Menu item
+.MuiMenuItem-root {
+  color: $grey-50;
+}
+
+.MuiMenuItem-root.Mui-selected {
+  background-color: $primary-800;
+}
+
+// scrollbar
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: $grey-500 $bg-dark;
+}
+
+// /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $grey-700;
+  border-radius: 8px;
+  border: 5px solid $bg-dark;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+// input number, hide the arrows
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+//
+input {
+  color-scheme: dark;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px $bg-dark inset;
+}
