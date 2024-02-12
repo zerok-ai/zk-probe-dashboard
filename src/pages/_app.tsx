@@ -1,10 +1,13 @@
-import "styles/globals.scss";
 import { dark } from "@clerk/themes";
 import type { AppProps } from "next/app";
 import { ClerkProvider } from "@clerk/nextjs";
 import Layout from "../components/Layout";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "react-hot-toast";
+
+// styles
+import "styles/globals.scss";
+import "styles/normalize.scss";
 
 const queryClient = new QueryClient();
 

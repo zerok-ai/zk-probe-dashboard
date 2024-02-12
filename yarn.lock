@@ -538,6 +538,18 @@
   dependencies:
     "@tanstack/query-core" "5.17.0"
 
+"@tanstack/react-table@^8.11.8":
+  version "8.11.8"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-table/-/react-table-8.11.8.tgz#4eef4a2d91116ca51c8c9b2f00b455d8d99886c7"
+  integrity sha512-NEwvIq4iSiDQozEyvbdiSdCOiLa+g5xHmdEnvwDb98FObcK6YkBOkRrs/CNqrKdDy+/lqoIllIWHk+M80GW6+g==
+  dependencies:
+    "@tanstack/table-core" "8.11.8"
+
+"@tanstack/table-core@8.11.8":
+  version "8.11.8"
+  resolved "https://registry.yarnpkg.com/@tanstack/table-core/-/table-core-8.11.8.tgz#7f46c31894249dbb57e43ad95c80e891236a895f"
+  integrity sha512-DECHvtq4YW4U/gqg6etup7ydt/RB1Bi1pJaMpHUXl65ooW1d71Nv7BzD66rUdHrBSNdyiW3PLTPUQlpXjAgDeA==
+
 "@types/body-parser@*":
   version "1.19.5"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.19.5.tgz#04ce9a3b677dc8bd681a17da1ab9835dc9d3ede4"
@@ -1103,6 +1115,11 @@ chalk@^4.0.0:
     readdirp "~3.6.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+classnames@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
 
 client-only@0.0.1:
   version "0.0.1"

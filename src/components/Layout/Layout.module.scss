@@ -1,5 +1,11 @@
 @import "styles/variables.module.scss";
 
+.container {
+  padding: $sp-20 0;
+}
+.header {
+  margin-bottom: $sp-12;
+}
 .content {
-  padding: $sp-20 $sp-24;
+  padding: $sp-20 $sp-36;
 }
